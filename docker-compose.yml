@@ -1,0 +1,14 @@
+version: '2.4'
+services:
+  hub:
+    image: test_selenium_hub
+    ports:
+      - "4444:4444"
+  chrome:
+    volumes:
+        - "./Tools:C:/LinkedTools"
+    image: test_selenium_node
+    ports:
+      - "12345:3389"
+    depends_on:
+      - hub

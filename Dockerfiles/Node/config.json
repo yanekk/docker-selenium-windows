@@ -1,0 +1,31 @@
+{
+    "capabilities":
+        [
+          {
+            "browserName": "chrome",
+            "maxInstances": 8,
+            "platform": "WINDOWS",
+            "chrome_binary": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
+          },
+          
+          {
+            "browserName": "firefox",
+            "maxInstances": 8,
+            "platform": "WINDOWS"
+          }
+        ],
+      "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
+      "maxSession": 16,
+      "port": -1,
+      "register": true,
+      "hub": "http://hub:4444",
+      "nodeStatusCheckTimeout": 5000,
+      "nodePolling": 5000,
+      "role": "node",
+      "unregisterIfStillDownAfter": 60000,
+      "downPollingLimit": 2,
+      "debug": false,
+      "servlets" : [],
+      "withoutServlets": [],
+      "custom": {}
+}
